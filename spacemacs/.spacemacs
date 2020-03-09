@@ -56,6 +56,13 @@ This function should only modify configuration layer settings."
      ;; version-control
      syntax-checking
      lsp
+
+     (typescript :variables
+                 typescript-backend 'lsp)
+
+     (vue :variables
+          vue-backend 'lsp)
+
      (python :variables
              python-test-runner 'pytest)
      )
