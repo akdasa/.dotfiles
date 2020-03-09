@@ -57,6 +57,10 @@ This function should only modify configuration layer settings."
      syntax-checking
      lsp
 
+     (treemacs :variables
+               treemacs-no-png-images t
+               treemacs-lock-width t)
+
      (typescript :variables
                  typescript-backend 'lsp)
 
