@@ -473,6 +473,14 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  ; web-mode
+  (setq-default
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2)
+  (setq
+   web-mode-enable-auto-pairing nil)
+
   ; move line up/down using super+up/down keys
   (global-set-key (kbd "s-<up>") 'move-text-up)
   (global-set-key (kbd "s-<down>") 'move-text-down)
