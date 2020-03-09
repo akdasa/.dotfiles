@@ -473,6 +473,11 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  ; move line up/down using super+up/down keys
+  (global-set-key (kbd "s-<up>") 'move-text-up)
+  (global-set-key (kbd "s-<down>") 'move-text-down)
+
+  ; hide spaceline widgets
   (spaceline-toggle-buffer-position-off)
   (spaceline-toggle-hud-off)
   )
