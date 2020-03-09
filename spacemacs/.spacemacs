@@ -488,6 +488,9 @@ before packages are loaded."
   ; hide spaceline widgets
   (spaceline-toggle-buffer-position-off)
   (spaceline-toggle-hud-off)
+
+  ; lsp
+  (setq lsp-ui-doc-enable nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
