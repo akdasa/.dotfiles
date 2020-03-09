@@ -492,6 +492,12 @@ before packages are loaded."
 
   ; lsp
   (setq lsp-ui-doc-enable nil)
+
+  ;; enable scrolling in terminal
+  (unless window-system
+    (global-set-key [mouse-4] 'scroll-down-line)
+    (global-set-key [mouse-5] 'scroll-up-line)
+    (xterm-mouse-mode 1))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
