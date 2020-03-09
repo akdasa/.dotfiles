@@ -1,9 +1,9 @@
 #!/bin/bash
 
-## Stage 1: Install brew
+## Stage 1: Install utils
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
+brew install stow
 
 
 ## Stage 2: Install apps from cask
