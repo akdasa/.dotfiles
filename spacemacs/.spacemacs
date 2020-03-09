@@ -498,6 +498,10 @@ before packages are loaded."
     (global-set-key [mouse-4] 'scroll-down-line)
     (global-set-key [mouse-5] 'scroll-up-line)
     (xterm-mouse-mode 1))
+
+  ;; when opening a file that is a symbolic link, don't ask whether I
+  ;; want to follow the link. Just do it
+  (setq find-file-visit-truename t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
