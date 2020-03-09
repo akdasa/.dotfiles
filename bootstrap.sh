@@ -32,3 +32,11 @@ brew cask install iterm2
 brew cask install skype
 brew cask install whatsapp
 
+
+
+## Stage 3: Configure dev env
+
+# spacemacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+(cd ~/.emacs.d && git checkout develop)
+
