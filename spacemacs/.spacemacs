@@ -54,6 +54,10 @@ This function should only modify configuration layer settings."
      ;; syntax-checking
      treemacs
      ;; version-control
+     syntax-checking
+     lsp
+     (python :variables
+             python-test-runner 'pytest)
      )
 
    ;; List of additional packages that will be installed without being
