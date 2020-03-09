@@ -485,9 +485,10 @@ before packages are loaded."
   (global-set-key (kbd "s-<up>") 'move-text-up)
   (global-set-key (kbd "s-<down>") 'move-text-down)
 
-  ; hide spaceline widgets
+  ; visual
   (spaceline-toggle-buffer-position-off)
   (spaceline-toggle-hud-off)
+  (spacemacs/toggle-mode-line-minor-modes-off)
 
   ; lsp
   (setq lsp-ui-doc-enable nil)
