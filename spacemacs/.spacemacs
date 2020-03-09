@@ -57,6 +57,10 @@ This function should only modify configuration layer settings."
      syntax-checking
      lsp
 
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+
      (treemacs :variables
                treemacs-no-png-images t
                treemacs-lock-width t)
