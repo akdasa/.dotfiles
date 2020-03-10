@@ -14,5 +14,8 @@ function fish_prompt --description 'Write out the prompt'
             set color_cwd $fish_color_cwd
             set suffix '>'
     end
+    if set -q VIRTUAL_ENV
+        echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+    end
     echo -n -s "$USER" @ (prompt_hostname) ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
 end
