@@ -4,7 +4,7 @@
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew install stow
-
+brew install python3
 
 ## Stage 2: Install apps from cask
 
@@ -35,6 +35,9 @@ brew cask install whatsapp
 
 
 ## Stage 3: Configure dev env
+
+# toolkit
+pip3 install virtualfish
 
 # spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
