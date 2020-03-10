@@ -39,7 +39,11 @@ This function should only modify configuration layer settings."
      helm
      multiple-cursors
      syntax-checking
-     lsp
+
+     ; workaround for https://github.com/syl20bnr/spacemacs/issues/13355
+     (lsp :variables
+          lsp-ui-doc-winum-ignore t
+          lsp-ui-doc--buffer-prefix " *lsp-ui-doc-")
 
      (shell :variables
             shell-default-height 30
