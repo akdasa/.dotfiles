@@ -486,7 +486,11 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  ; web-mode
+
+  ;; general
+  (setq-default truncate-lines t)
+
+  ;; web-mode
   (setq-default
    web-mode-markup-indent-offset 2
    web-mode-css-indent-offset 2
