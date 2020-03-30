@@ -62,7 +62,10 @@ This function should only modify configuration layer settings."
           vue-backend 'lsp)
 
      (python :variables
-             python-test-runner 'pytest)
+             python-test-runner 'pytest
+             python-pipenv-activate t
+             python-backend 'lsp
+             python-lsp-server 'mspyls)
      )
 
    ;; List of additional packages that will be installed without being
