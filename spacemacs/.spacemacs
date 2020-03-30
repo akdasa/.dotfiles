@@ -498,16 +498,16 @@ before packages are loaded."
   (setq
    web-mode-enable-auto-pairing nil)
 
-  ; move line up/down using super+up/down keys
+  ;; move line up/down using super+up/down keys
   (global-set-key (kbd "s-<up>") 'move-text-up)
   (global-set-key (kbd "s-<down>") 'move-text-down)
 
-  ; visual
+  ;; visual
   (spaceline-toggle-buffer-position-off)
   (spaceline-toggle-hud-off)
   (spacemacs/toggle-mode-line-minor-modes-off)
 
-  ; lsp
+  ;; lsp
   (setq lsp-ui-doc-enable nil)
 
   ;; enable scrolling in terminal
