@@ -69,7 +69,10 @@ This function should only modify configuration layer settings."
              python-test-runner 'pytest
              python-pipenv-activate t
              python-backend 'lsp
-             python-lsp-server 'mspyls)
+             python-lsp-server 'pyls
+             python-format-on-save t
+             python-fill-column 99
+             python-sort-imports-on-save t)
      )
 
    ;; List of additional packages that will be installed without being
