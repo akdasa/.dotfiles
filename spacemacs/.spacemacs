@@ -37,7 +37,10 @@ This function should only modify configuration layer settings."
      docker
      yaml
      nginx
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-return-key-behavior 'complete
+                      auto-completion-tab-key-behavior 'cycle
+                      auto-completion-enable-snippets-in-popup t)
      git
      helm
      multiple-cursors
